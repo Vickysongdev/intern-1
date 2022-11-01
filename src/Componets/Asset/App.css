@@ -23,6 +23,34 @@ gap: 4.27px;
   width: 100px; 
   height: 100px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.figure{
+  position: relative;
+  width: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+}
+.figure img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+}
+.figure .image-hover {
+  position: absolute;
+  width: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.figure:hover .image-hover {
+  opacity: 1;
 }
 
 .App-links {
@@ -42,6 +70,7 @@ gap: 4.27px;
 .App-links h3:hover {
   background: #c5c1c1;  
   color: #fff;
+  border-radius: 1.5rem;
 }
 .App-links h3 {
   margin-top: 0;

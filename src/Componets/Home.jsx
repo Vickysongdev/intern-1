@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../Componets/Asset/vic.jpg';
+import hover from '../Componets/Asset/hover.png';
 import share from '../Componets/Asset/_Avatar share button (1).png';
 import git from '../Componets/Asset/github-edit.jpg';
 import slack from '../Componets/Asset/5cb480cd5f1b6d3fbadece79.png';
@@ -16,11 +17,22 @@ function Home() {
          <img src={avata} alt="" className="avata"  />
          <div className="share"> <img src={share} alt="" /></div>
       <header className="App-header">
+      <div className="figure">
         <img src={logo} className="App-logo" alt="logo" />
+        <img src={hover} className="image-hover" alt="logo" />
+      
+      </div>
        <h3   className="name">VickyTech</h3>
       </header>
-      <div className="App-links">
-        <a href="https://twitter.com/IbredeV"><h3>Twitter Link</h3></a>
+      <div className="App-links  links">
+        <a  className="link"
+        id='btn__zuri'
+        
+        href="https://twitter.com/IbredeV"  target="_blank" rel="noopener noreferrer">
+          
+          <h3>Twitter Link</h3>
+        
+        </a>
       </div>
       <div className="App-links">
         <a href="https://training.zuri.team/"><h3>Zuri Team</h3></a>
